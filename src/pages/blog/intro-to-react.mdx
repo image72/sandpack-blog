@@ -1,0 +1,105 @@
+export const meta = {
+  title: 'Introduction to React.js',
+  description: 'Getting started with React framework',
+  date: 'Jan 02, 2022',
+  readTime: 2,
+  file: 'intro-to-react',
+};
+
+# {meta.title}
+
+## Hello world in React
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<CodeEditor>
+```js
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+export default function App() {
+  return (
+    <div>
+      <h1>Hello World</h1>
+    </div>
+  );
+}
+
+````
+
+```js date.jsx active
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+export default function App() {
+  return (
+    <div>
+      <h1>{+new Date}</h1>
+    </div>
+  );
+}
+
+````
+
+</CodeEditor>
+
+## Components
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<CodeEditor>
+
+```js App.js
+import Greet from './Greet.js';
+
+export default function MyApp() {
+  return (
+    <div>
+      <h1>My App</h1>
+      <Greet />
+    </div>
+  );
+}
+```
+
+```js Greet.js active
+function Greeting({ name }) {
+  return <h3>Hello, {name}!</h3>;
+}
+
+export default function Greet() {
+  return (
+    <div>
+      <Greeting name="Divyesh" />
+      <Greeting name="Sarah" />
+      <Greeting name="Taylor" />
+    </div>
+  );
+}
+```
+
+```js Expo.js hidden
+function Greeting({ name }) {
+  return <h1>Hello, {name}!</h1>;
+}
+
+export default function Expo() {
+  return (
+    <div>
+      <Greeting name="Divyesh" />
+      <Greeting name="Sarah" />
+      <Greeting name="Taylor" />
+    </div>
+  );
+}
+```
+
+</CodeEditor>
+
+## Props
+
+<CodeEditor />
+
+## Conclusion
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis at erat pellentesque adipiscing commodo. Sodales ut etiam sit amet nisl purus in mollis nunc. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Tellus orci ac auctor augue mauris augue neque gravida. Risus viverra adipiscing at in tellus. Ultrices vitae auctor eu augue. Tempus urna et pharetra pharetra massa massa ultricies. Elementum facilisis leo vel fringilla. Quis blandit turpis cursus in hac habitasse. Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Massa id neque aliquam vestibulum morbi blandit cursus risus at. Vitae sapien pellentesque habitant morbi tristique senectus. Elementum nisi quis eleifend quam adipiscing vitae proin. Aliquam nulla facilisi cras fermentum.

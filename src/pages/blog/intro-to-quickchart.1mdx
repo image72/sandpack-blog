@@ -1,0 +1,22 @@
+export const meta = {
+  title: 'Intro to quickchart',
+  description: 'quickchart chart',
+  date: 'Jan 01, 2022',
+  readTime: 2,
+  file: 'intro-to-quickchart',
+};
+
+## quickchart template
+
+:::quickchart
+{
+type: 'bar',
+data: {
+labels: [2012, 2013, 2014, 2015, 2016],
+datasets: [{
+label: 'Users',
+data: [120, 60, 50, 180, 120]
+}]
+}
+}
+:::
